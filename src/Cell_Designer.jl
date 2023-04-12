@@ -76,7 +76,7 @@ end
 
 
 function electrode_geometry(electrode, volm_jellyroll, jellyroll_length, height_jellyroll)
-    # Calculate Eletrode Geometry Characteristics
+    # Calculate Electrode Geometry Characteristics
     # Calculate Weight Fraction
 
     AM_wt_fr = 1 - electrode.bind_wt_fr - electrode.cond_wt_fr

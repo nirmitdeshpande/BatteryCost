@@ -1,5 +1,12 @@
 #TODO: Add Keyword Constructors for all datatypes
 #TODO MAYBE: Create + methods to build cells
+#TODO: add NMC811
+#TODO: update NMC622 and LFP costs
+
+
+
+
+
 nca_default() = struct_electrode(
                                   "NCA",                # Chemistry type
                                   0.03,                 # binder weight fraction
@@ -19,7 +26,35 @@ nca_default() = struct_electrode(
                                   8.88,                 # Tab density (Ni)                              g/cm3
                                 )
 
+
+
+
+
+
+nmc811_default() = struct_electrode(
+
+                                  "NMC811",     # Chemistry type
+                                  0.03,         # binder weight fraction
+                                  0.03,         # Conductive material weight fraction
+                                  4.7,          # AM density
+                                  1.77,         # binder density
+                                  1.77,         # conductive material density
+                                  195.0,        # first charge specific capacity
+                                  171.0,        # reversible specific capactity
+                                  50.0,         # total thickness cathode
+                                  0.3,          # porosity
+                                  0.0,          # extra length
+                                  15.0,         # Pos foil (Al) thickness                      microns
+                                  2.7,          # Pos foil density
+                                  7.0,          # Tab thickness                                microns
+                                  6.0,          # Tab width                                      mm
+                                  8.88,         # Tab density
+                                )
+
+
+                               
 nmc622_default() = struct_electrode(
+
                                     "NMC622",     # Chemistry type
                                     0.03,         # binder weight fraction
                                     0.03,         # Conductive material weight fraction

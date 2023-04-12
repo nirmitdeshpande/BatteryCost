@@ -245,7 +245,7 @@ function OEM(input_OEM,cost,breakdown,materials_breakdown)
 
 
     if cost_verbosity == 1
-        print("\n\n************************************************ Invsetment Costs (Million USD) ************************************************ ")
+        print("\n\n************************************************ Investment Costs (Million USD) ************************************************ ")
 
         print("\n\nbuilding_investment       = ", building_investment)
         print("\ntotal_launch_cost           = ", total_launch_cost)

@@ -1,8 +1,0 @@
-Examples/.ipynb_checkpoints/*
-.DS_Store
-
-.vscode/
-
-*.code-workspace
-
-Manifest.toml
