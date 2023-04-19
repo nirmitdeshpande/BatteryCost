@@ -1,4 +1,5 @@
-
+using BatteryCost
+import BatteryCost: cell
 
 cell1 = cell()
 cost1 = cost_default()

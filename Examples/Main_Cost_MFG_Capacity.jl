@@ -1,4 +1,4 @@
-include("../src/PBCM.jl")
+include("../src/PBCM_IO.jl")
 
 cell_general = cell()
 cell_design_op = cylindrical_cell_designer(cell_general)
@@ -19,12 +19,12 @@ cost_calc(cell_general, cost, system="Cell", cost_verbosity = 0)
 
 
 clf()
-data = ["NCA", "NMC622", "LFP"]
-AM_rho_data = [4.71, 4.8, 3.6]
-rev_sp_cap_data  = [0.180, 0.171, 0.150]
-AM_price_data = [26.43, 17.83, 5.07]
+data = ["NCA", "NMC622", "NMC811", "LFP"]
+AM_rho_data = [4.71, 4.8, 4.8, 3.6]
+rev_sp_cap_data  = [0.180, 0.171, 171, 0.150]
+AM_price_data = [26.43, 17.83, 20.00, 5.07]
 
-for j in range(1, 3, step=1)
+for j in range(1, 4, step=1)
     cell_general.cathode.AM_rho = AM_rho_data[j]
     cell_general.cathode.rev_sp_cap = rev_sp_cap_data[j]
     cost.cell_costs.cathode.AM[1] =  AM_price_data[j]

@@ -1,4 +1,4 @@
-include("../src/PBCM.jl")
+include("../src/PBCM_IO.jl")
 
 cell_general = cell()
 cell_design_op = cylindrical_cell_designer(cell_general)

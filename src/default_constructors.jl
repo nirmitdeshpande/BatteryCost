@@ -3,7 +3,8 @@
 #TODO: add NMC811
 #TODO: update NMC622 and LFP costs
 
-
+#include("Cell_Designer.jl")
+#include("Cost_Inputs_Taxonomy.jl")
 
 
 
@@ -29,8 +30,6 @@ nca_default() = struct_electrode(
 
 
 
-
-
 nmc811_default() = struct_electrode(
 
                                   "NMC811",     # Chemistry type
@@ -50,6 +49,10 @@ nmc811_default() = struct_electrode(
                                   6.0,          # Tab width                                      mm
                                   8.88,         # Tab density
                                 )
+
+#CITATION: NMC811 attribute values from Intercalation Station, Matt Lacey
+# TODO revise using Battery Component Price Report 2023
+
 
 
                                
