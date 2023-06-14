@@ -33,7 +33,7 @@ mutable struct struct_electrode
        tab_rho::Float64                               # Tab Density
 end
 
-
+# TODO add design_verbosity
 mutable struct struct_cell_general
     form_factor::String              # ["Cyl","Pris","Pou"]
     size::String                     # ["18650", "21700", etc]
